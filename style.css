@@ -1,6 +1,7 @@
 html {
 	--orange: black;
 	--orangered: #A82E00;
+	--orangeredButLight: #fee7cf;
 	--black: white;
 	--gray: #C9C9C9;
 }
@@ -365,6 +366,28 @@ height: 170px;
 #migracion img {
 	width: 200px;
 	height: 150px;
+}
+
+.authorsSpacer{
+padding: 10px;
+
+margin-left: auto !important;
+margin-top: auto !important;
+margin-right: 2px !important;
+margin-bottom: 2px !important;
+
+background-color: transparent !important;
+border: 0px solid transparent !important;
+
+}
+
+.authors{
+background-color: var(--orangeredButLight) !important;
+border: 0px solid transparent !important;
+padding: 10px !important;
+border-radius: 10px !important;
+font-weight: 900;
+font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 900px) {
