@@ -1,0 +1,378 @@
+html {
+	--orange: black;
+	--orangered: #A82E00;
+	--black: white;
+	--gray: #C9C9C9;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--black);
+	color: var(--orange);
+	font-family: monospace;
+	/* font-style: italic; */
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	border-bottom: 2px solid var(--orange);
+	padding-bottom: 4px;
+	background-color: var(--orange);
+	color: var(--black);
+
+
+	justify-content: flex-end;
+	align-items: flex-end;
+
+
+	font-family: serif;
+}
+
+.mainTittle img {
+	width: 50px;
+	height: 60px;
+}
+
+header div {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+
+
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+.important2 {
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.important{
+	font-weight: 800;
+	font-size: 1.3rem;
+	display: block;
+}
+
+
+
+header p {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-right: 8px;
+
+	font-style: italic;
+	font-family: monospace;
+	font-size: 1.2rem;
+}
+
+p {
+	font-size: 0.9rem;
+
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+main {
+	display: grid;
+	margin: 5px;
+	grid-template-columns: 1fr 1fr;
+	/* grid-template-rows: .001fr 1fr 1fr .5fr .5fr .5fr; */
+	grid-template-areas:
+		"about tech "
+		"about tech "
+		". tech"
+		"cyber  esi "
+		"huerta  esi "
+		"peligros .";
+
+	gap: 10px;
+}
+
+#cyber {
+	grid-area: cyber;
+}
+
+#recurso img {
+
+	width: 400px;
+	height: 300px;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	border: 2px solid var(--orange);
+	border-radius: 8px;
+	padding: 5px;
+
+}
+
+section>ol {
+	border: 2px solid var(--orange);
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+section h3 {
+	margin-top: 10px;
+}
+
+h2 {
+	margin-top: 5px;
+	background-color: var(--orange);
+	color: var(--black);
+	border-radius: 8px;
+	padding: 6px;
+}
+
+main section:nth-of-type(1) {
+	grid-area: about
+}
+
+
+main section:nth-of-type(2) {
+
+	grid-area: tech;
+	padding: 5px;
+}
+
+img {
+	align-self: center;
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	border-radius: 8px;
+}
+
+#esi div {
+	border-radius: 8px;
+}
+
+#dengue div {
+	border-radius: 8px;
+}
+
+li {
+	list-style: none;
+	font-size: 1.2rem;
+	padding: 3px;
+	border-bottom: 2px solid var(--orange);
+	border-radius: 1px;
+}
+
+li:last-child {
+	border-bottom: 0px solid transparent;
+}
+
+.answer {
+	display: block;
+	font-size: 1rem;
+	color: var(--orangered);
+}
+
+
+#tecno ul {
+	display: flex;
+	flex-direction: column;
+	/* padding: 0px; */
+	gap: 3px;
+	padding: 5px;
+}
+
+#tecno dt {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+
+#tecno h3 {
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+
+#tecno dl {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+#tecno div {
+	border: 2px solid var(--orange);
+	border-radius: 5px;
+}
+
+#tecno li,
+#esi li {
+	border: 0px solid transparent;
+	background-color: var(--orange);
+	color: var(--black);
+	list-style-type: none;
+	border-radius: 5px;
+}
+
+#dengue {
+	gap: 7px;
+}
+
+#dengue div,
+#esi div {
+	border: 2px solid var(--orange);
+	padding: 5px;
+}
+
+#esi {
+	gap: 5px;
+}
+
+#esi div , #tecno div{
+	background-color: var(--gray);
+}
+
+
+#peligros {
+	grid-area: peligros;
+}
+
+#peligros img {
+	width: 200px;
+	height: 150px;
+}
+
+
+#dengue li {
+	border: 0px solid transparent;
+	background-color: var(--orange);
+	color: var(--black);
+	list-style-type: none;
+	border-radius: 5px;
+}
+
+#dengue div {
+	background-color: var(--gray);
+}
+
+#esi {
+	grid-area: esi;
+
+}
+
+#esi img {
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+#esi div {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--gray);
+	gap: 5px;
+	padding: 5px;
+}
+
+#cyber>dl {
+	border: 2px solid var(--orange);
+	border-radius: 5px;
+	font-size: 1.7rem;
+	background-color: var(--gray);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 2px;
+}
+
+#cyber img {
+	margin: 2px;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+.mainT {
+	background-color: var(--orangered);
+	border-radius: 8px;
+	color: var(--black);
+}
+
+.secondaryText {
+	border: 2px solid var(--orange);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--black);
+	gap: 5px;
+}
+
+.secondaryText dt {
+	background-color: var(--orange);
+	color: var(--black);
+
+	font-size: 1.4rem;
+}
+
+
+.secondaryText dd,
+.secondaryText li {
+	font-size: .9rem;
+}
+
+.secondaryText li {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 15px;
+	list-style-type: disc;
+}
+
+#cyber li {
+	border: 0px solid transparent;
+}
+
+#huerta {
+	grid-area: huerta;
+}
+
+#huerta div {
+	display: flex;
+	flex-direction: row;
+
+}
+
+#huerta > img{
+width: 240px;
+height: 170px;
+}
+#migracion img {
+	width: 200px;
+	height: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+}
